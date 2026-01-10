@@ -1,0 +1,9 @@
+# CODEOWNERS - Blood Studio
+# Define revisores por rutas. Requiere que el repositorio use PRs y revisión.
+# [POR DEFINIR]: reemplazar @equipo o @usuarios reales
+
+# Ejemplo:
+# /src/components/ @frontend-team
+# /src/pages/ @frontend-team
+# /.github/ @tech-leads
+
