@@ -1,20 +1,56 @@
 ## Referencia Jira
-BS-____
+Indica el identificador de la incidencia asociada a este Pull Request.
 
-## Descripción
-Describe el objetivo del cambio y el contexto mínimo.
+Ejemplo: BS-29
+
+---
+
+## Objetivo del cambio
+Describe de forma clara y concisa qué problema se resuelve o qué funcionalidad se implementa.
+
+---
+
+## Alcance del Pull Request
+Marca la opción que aplique y justifica brevemente.
+
+- [ ] Cambio acotado a una sola incidencia de Jira
+- [ ] Requiere cambios adicionales relacionados (justificar)
+
+---
 
 ## Cambios realizados
-Explica qué se hizo y por qué.
+Enumera o describe los cambios principales realizados en este Pull Request.
 
-## Evidencia / Pruebas
-Describe cómo se validó (capturas, pasos, resultados, build).
+---
 
-## Riesgos y consideraciones
-Indica impactos potenciales y mitigaciones.
+## Evidencia y validación
+Describe cómo se validó el cambio:
+- Build local
+- Pruebas manuales
+- Evidencia visual (si aplica)
+- Otros
 
-## Checklist
-- [ ] Cumple modelo de ramas y convención de nombre
-- [ ] Commits bajo Conventional Commits
-- [ ] Alcance acotado a la incidencia
-- [ ] CI en verde
+---
+
+## Impacto y riesgos
+Indica si el cambio introduce riesgos conocidos, dependencias nuevas o posibles efectos colaterales.
+
+- [ ] No se identifican riesgos relevantes
+- [ ] Existen riesgos (describir)
+
+---
+
+## Checklist obligatorio
+Antes de solicitar revisión, confirma que cumples con lo siguiente:
+
+- [ ] La rama se creó desde `develop`
+- [ ] El Pull Request apunta a `develop` (o justifica si es `main`)
+- [ ] Los commits siguen Conventional Commits
+- [ ] Los commits están en español e incluyen referencia a Jira
+- [ ] El CI se ejecuta correctamente y está en verde
+- [ ] El alcance es coherente con la incidencia de Jira
+
+---
+
+## Información adicional
+Agrega cualquier contexto adicional que facilite la revisión del Pull Request.
