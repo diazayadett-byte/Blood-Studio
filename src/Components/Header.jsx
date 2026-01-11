@@ -10,15 +10,12 @@ export const Header = () => {
           <img src={logo} width={40} alt="Logo" />
         </a>
 
-        {/* BOTÓN HAMBURGUESA (Solo se ve en móviles) */}
+        {/* BOTÓN HAMBURGUESA */}
         <button 
           className="navbar-toggler" 
           type="button" 
           data-bs-toggle="collapse" 
-          data-bs-target="#navbarContent" 
-          aria-controls="navbarContent" 
-          aria-expanded="false" 
-          aria-label="Toggle navigation"
+          data-bs-target="#navbarContent"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -34,26 +31,28 @@ export const Header = () => {
             <li className="nav-item"><a className="nav-link text-dark" href="#">Visualizador</a></li>
           </ul>
 
-          {/* Buscador (Se adapta al menú en móvil) */}
-          <div className="d-flex mx-lg-auto my-2 my-lg-0" style={{ maxWidth: '400px', width: '100%' }}>
+          {/* Buscador-movil */}
+          <div className="mx-lg-auto d-flex justify-content-center my-3 my-lg-0" style={{ width: '100%', maxWidth: '450px' }}>
             <div className="input-group">
               <input 
                 type="text" 
-                className="form-control border-end-0" 
+                className="form-control border-end-0 shadow-none" 
                 placeholder="¿Qué estás buscando?" 
-                style={{ borderRadius: '25px 0 0 25px' }}
+                style={{ borderRadius: '25px 0 0 25px', border: '1px solid #ced4da' }}
               />
               <button 
-                className="btn btn-dark" 
+                className="btn text-white px-3" 
                 type="button" 
-                style={{ borderRadius: '0 25px 25px 0', backgroundColor: '#4b3f6b', border: 'none' }}
+                style={{ borderRadius: '0 25px 25px 0', backgroundColor: '#4b3f6b' }}
               >
                 🔍
               </button>
             </div>
           </div>
+         
 
-          {/* Iconos (Derecha) */}
+
+          {/* Iconos */}
           <div className="d-flex justify-content-center align-items-center gap-3 ms-lg-3 mt-3 mt-lg-0">
             <a href="#" className="text-dark fs-4">👤</a>
             <a href="#" className="text-dark fs-4">🤍</a>
