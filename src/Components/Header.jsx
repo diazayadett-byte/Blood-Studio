@@ -1,3 +1,6 @@
+import React from 'react';
+import logoBloom from '../assets/logo.png';
+
 import "./Header.css";
 
 
